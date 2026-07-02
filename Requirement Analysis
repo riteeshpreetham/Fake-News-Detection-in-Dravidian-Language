@@ -1,0 +1,27 @@
+1. Functional Requirements:
+
+
+Data Handling:
+Load and preprocess datasets 
+Tokenize and pad sequences to a fixed length for input compatibility.
+Model Components:
+Embedding Layer: Use mBERT for multilingual contextual embeddings.
+CNN Layer: Apply Conv1D with dilation rates = 2, 3, and 4 to capture local, medium, and long-range patterns in the text.
+BiLSTM Layer: Extract long-range dependencies through a bidirectional LSTM.
+Fully Connected Layers: Implement dense layers with dropout for classification.
+Output Layer: Binary classification using the sigmoid activation function.
+Model Training and Evaluation:
+Split the dataset into training and validation sets.
+Fit the model on training data and validate performance.
+Track training metrics like accuracy and loss.
+
+2. Software and Libraries:
+Core Libraries:
+TensorFlow (for building and training the model).
+Transformers (for using the mBERT model).
+Scikit-learn (for dataset splitting).
+Pandas (for data manipulation).
+Environment:
+Python 3.x
+Google Colab (for iterative development and testing).
+
