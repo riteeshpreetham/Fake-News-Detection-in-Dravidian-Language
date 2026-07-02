@@ -21,3 +21,43 @@ Why is fake news attracting more public attention recently?
 Fake news can now be created and published faster and cheaper.
 The rise of social media and its popularity also plays an important role.
 Social media accelerates dissemination and evolution of fake news.
+
+Definition: In the news corpus E among news articles a, the task of fake news detection is to predict whether the news article a is fake or not, i.e
+
+ F : E → {0, 1} such that 
+
+                               F(a) =   0, if a is a piece of fake news 
+                                            1, otherwise 
+
+where F is the prediction function. 
+
+
+
+Classification of Fake News Detection based on Resource Availability
+
+Most languages (over 7000+) languages around the world come under low or extremely low resource languages.
+
+High resource FND: languages have ample amounts of corpora over the years and tools. For example, English, French, German.
+
+Low resource FND: languages have limited amounts of training data or linguistic resources. For example, Dravidian languages, Swahili, Hindi, Assamese
+
+
+Classification of FND based on Word Embeddings
+
+Non-Contextualized: They produce a single vector representation for each word, focusing on overall semantic relationships rather than context-specific meaning. 
+    ex: Word2Vec, fastText, GloVe etc.,
+
+Contextualized: Generate different vector representations for the same word depending on its surrounding context within a sentence or document.
+     ex: BERT, RoBERTa, XLM-RoBERTa, Distil-BERT etc.,
+
+
+Dravidian Languages
+
+Telugu, Tamil, Kannada, and Malayalam are the major Dravidian languages family with 250 million native speakers 2 . The Dravidian language family is one of the oldest in the world. Six languages are currently recognized by India as Classical languages and four of them are Dravidian languages Tamil, Telugu, Kannada and Malayalam. 
+The most characteristic grammatical features of Dravidian Languages are:
+     1)Dravidian languages are agglutinative and have a clusivity distinction.
+     2)Word order is subject-object-verb(SOV).
+     3)Word order follows certain basic rules but is relatively free.
+
+
+
